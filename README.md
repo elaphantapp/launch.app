@@ -1,5 +1,3 @@
-# launch.app
-
 ## 启动大象钱包的过渡页面的使用方法
 
   Elephant Wallet的开发团队提供了一个过渡页面，用于解决从PC Web或者是从微信里启动Elephant的问题。
