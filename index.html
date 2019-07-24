@@ -359,7 +359,9 @@
                 return url.substring(0, url.length - 1);
             },
             handleUrl(url) {
-                var str = decodeURIComponent(url);
+                //console.log("=========str===========" + url);
+                var str = url;
+                console.log("=========str1===========" + str);
                 var str1 = str.split("?");
                 this.scmal = str1[0];
                 var str2 = "";
