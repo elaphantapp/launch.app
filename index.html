@@ -427,12 +427,13 @@
                                     if (res.status === 200) {
                                         if (res.data) {
                                             var data = JSON.parse(res.data);
+                                            this.ReturnUrl = decodeURIComponent(this.ReturnUrl);
                                             if (this.ReturnUrl.indexOf("?") > -1) {
 
-                                                window.location.href = decodeURIComponent(this.ReturnUrl) + "&" + this.buildParms(data);
+                                                window.location.href = this.ReturnUrl + "&" + this.buildParms(data);
 
                                             } else {
-                                                window.location.href = decodeURIComponent(this.ReturnUrl) + "?" + this.buildParms(data);
+                                                window.location.href = this.ReturnUrl + "?" + this.buildParms(data);
                                             }
 
                                             window.clearInterval(this.timer);
