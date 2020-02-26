@@ -435,6 +435,9 @@
                                             }
 
                                             window.clearInterval(this.timer);
+                                        } else {
+                                            window.location.href = decodeURIComponent(this.ReturnUrl).replace("return_url", "");
+                                            window.clearInterval(this.timer);
                                         }
                                     }
 
